@@ -1,0 +1,21 @@
+<table class="table table-striped table-hover">
+
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">Ciudad</th>
+    <th scope="col">Temperatura</th>
+    <th scope="col">Hora</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% cities_forecast.each do |city_forecast| %>
+    <tr>
+      <th scope="row"><%= city_forecast.name %></th>
+      <th scope="row"><%= city_forecast.temperature %></th>
+      <th scope="row"><%= city_forecast.local_time %></th>
+    </tr>
+  <% end %>
+  </tbody>
+
+</table>
